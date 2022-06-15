@@ -8,16 +8,14 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-    <h1>My Developer Skills</h1>
-    <ul>
+    <h1 class="gradient-text">My Developer Skills</h1>
+    <ul class="skill-list">
       <% skills.forEach(function(skill) { %>
-        <li>
+        <li class="completion">
           <a href="/skills/<%= skill.id %>"><%= skill.skill %></a>
-            - 
-          <%= skill.complete ? 'completed' : 'in-progress' %>
         </li>
       <% }); %>
     </ul>
-    <a href="/">Home Page</a>
+    <a class="redirect" href="/">Home Page</a>
   </body>
 </html>

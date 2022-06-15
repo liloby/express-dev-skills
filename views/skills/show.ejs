@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skill: <%= skill.skill %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-<body>
-  <h3><%= skill.skill %></h3>
-  <h3>Complete: <%= skill.complete ? 'Yes' : 'No' %></h3>
-  <a href="/">Home Page</a>
-  <a href="/skills">More Skills</a>
-</body>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1 class="skill"><%= skill.skill %></h1>
+    <div class="container">
+      <h3>
+        <span class="complete">Complete:</span> <%= skill.complete ? 'Yes' :
+        'No' %>
+      </h3>
+      <h3>
+        Completion Date: <%= skill.complete ? 'June 2022' : 'August 2022' %>
+      </h3>
+    </div>
+    <a class="redirect" href="/"><-Home Page</a>
+    <a class="redirect more-skill" href="/skills">More Skills-></a>
+  </body>
 </html>
