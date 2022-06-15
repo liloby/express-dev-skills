@@ -8,6 +8,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
   background: rgb(217, 200, 240);
+  margin-top: 80px;;
 }
 
 h1 {
@@ -48,6 +49,7 @@ a:hover {
 .skill {
   font-size: 60px;
   font-weight: bold;
+  margin-top: 150px;
 }
 
 .complete {
@@ -78,6 +80,7 @@ ul li {
 .start-view {
   color: rgb(0, 153, 153);
   font-size: large;
+  transition: ease-in-out 600ms;
 }
 
 .start-view:visited {
@@ -86,6 +89,7 @@ ul li {
 
 .start-view:hover {
   color: yellow;
+  transition: 1000ms;
 }
 
 .more-skill:hover {
@@ -97,9 +101,13 @@ ul li {
 }
 
 .gradient-text {
-  background: linear-gradient(0deg, rgb(0, 0, 0), rgb(100, 100, 100), rgb(200,200,200), rgb(61, 61, 61), rgb(0, 0, 0));
+  background: linear-gradient(0deg, rgb(0, 0, 0), rgb(150, 150, 150), rgb(0, 0, 0), rgb(150, 150, 150), rgb(0, 0, 0));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   padding: 0px 0 10px 0;
+}
+
+.move-down {
+  margin-top: 250px;
 }
