@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   line-height: 4rem;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.103);
 }
 
 body {
@@ -75,6 +76,7 @@ ul li {
 .container {
   border: 3px solid black;
   margin: 100px;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.11);
 }
 
 .start-view {
@@ -115,3 +117,38 @@ ul li {
 .main-page {
   padding-top: 8rem;
 }
+
+.skills-page {
+  height: 150vh;
+  margin: 0 auto;
+}
+
+.add-new {
+  text-shadow: none;
+}
+
+.add-new:visited {
+  color: rgb(231, 150, 0);
+}
+
+.add-new:hover {
+  color: yellow;
+}
+
+.delete-form {
+  display: inline-block;
+}
+	
+.delete-form button {
+  color: rgb(255, 110, 110);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-shadow: none;
+  font-size: 18px;
+}
+
+.delete-form:hover {
+  transform: scale(1.5);
+}
+	

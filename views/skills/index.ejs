@@ -7,15 +7,20 @@
     <title>Oby's Developer Skills</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
-<body>
+<body class="skills-page">
     <h1 class="gradient-text">My Developer Skills</h1>
     <ul class="skill-list">
       <% skills.forEach(function(skill) { %>
         <li class="completion">
+          <form action="/skills/<%= skill.id %>?_method=DELETE"
+            class="delete-form" method="POST">
+            <button class="del-btn" type="submit">X</button>
+          </form>
           <a href="/skills/<%= skill.id %>"><%= skill.skill %></a>
         </li>
       <% }); %>
     </ul>
     <a class="redirect" href="/"><-Home Page</a>
+    <a class="add-new" href="/skills/new">Add New Skill</a>
   </body>
 </html>
