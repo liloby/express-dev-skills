@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  line-height: 4rem;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.103);
 }
 
@@ -135,10 +134,40 @@ ul li {
   color: yellow;
 }
 
+
+.display-block {
+  display: block;
+  margin-top: 10rem;
+}
+
+input {
+  height: 2.5rem;
+  background: rgba(0, 0, 0, 0.042);
+  border: 2px solid black;
+}
+
+button {
+  font-size: 1.2rem;
+  border: none;
+  background: rgb(156, 255, 156);
+  padding: 8px 15px 11px 12px;
+  color: rgb(39, 36, 36);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.103);
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 5rem;
+  transition: 500ms;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
 .delete-form {
   display: inline-block;
 }
-	
+  
 .delete-form button {
   color: rgb(255, 110, 110);
   background: none;
@@ -146,9 +175,5 @@ ul li {
   cursor: pointer;
   text-shadow: none;
   font-size: 18px;
+  box-shadow: none;
 }
-
-.delete-form:hover {
-  transform: scale(1.5);
-}
-	
